@@ -8,23 +8,15 @@ This is the first-stop for developers building on Rollkit.
 
 ## Clone the repo
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+First, clone the starter repository and change into the `$HOME/gm-starter` repository:
 
 ```bash
-git clone https://github.com/rollkit/gm-starter.git
-```
-
-## Change into the repo's directory
-
-Now, change into the `$HOME/gm-starter` repository:
-
-```bash
-cd gm-starter
+git clone https://github.com/rollkit/gm-starter.git && cd gm-starter
 ```
 
 ## Run a local-celestia-devnet
 
-In a new terminal, start the local-celestia-devnet:
+In a second terminal instance, start the local-celestia-devnet:
 
 ```bash
 docker run --platform linux/amd64 -p 26657:26657 -p 26659:26659 -p 26658:26658 ghcr.io/rollkit/local-celestia-devnet:v0.11.0-rc8
