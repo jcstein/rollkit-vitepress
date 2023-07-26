@@ -11,8 +11,8 @@ hero:
       text: Rollup Starter
       link: /rollup-starter
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Introduction
+      link: /intro
 
 features:
   - title: Feature A
