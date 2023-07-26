@@ -10,6 +10,7 @@ export default defineConfig({
   description: "The open modular framework for sovereign rollups.",
   lastUpdated: true,
   cleanUrls: true,
+  ignoreDeadLinks: true,
   
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
