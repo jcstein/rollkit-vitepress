@@ -16,6 +16,7 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Rollup Starter', link: '/rollup-starter'},
+          { text: 'Polaris EVM Starter', link: '/polaris'},
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
