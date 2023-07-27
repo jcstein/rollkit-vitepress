@@ -81,7 +81,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jcstein/docs' },
+      { icon: 'github', link: 'https://github.com/jcstein/rollkit-vitepress' },
       { icon: 'twitter', link: 'https://twitter.com/RollkitDev' },
       { icon: { svg: telegramSVG }, link: 'https://t.me/rollkit' }
     ]
