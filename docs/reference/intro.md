@@ -19,9 +19,3 @@ on Cosmos SDK by visiting their [official documentation page](https://docs.cosmo
 
 If you're familiar with Rollkit, you may want to skip to the [tutorials section](../tutorials).
 :::
-
-<Cards>
-  <Card title="1. What is Rollkit?" href="/intro/what-is-rollkit" />
-  <Card title="2. The Rollkit stack" href="/intro/stack" />
-  <Card title="3. Transaction Flow" href="/intro/transaction-flow" />
-</Cards>

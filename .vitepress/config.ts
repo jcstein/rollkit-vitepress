@@ -6,11 +6,13 @@ const telegramSVG = ` <svg width="24" height="24" viewBox="0 0 24 24" fill="none
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  lang: 'en-US',
   title: "Rollkit",
   description: "The open modular framework for sovereign rollups.",
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
+  base: '/rollkit-nextra',
   
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -42,11 +44,7 @@ export default withMermaid({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Intro', link: 'intro'},
-      { text: 'Tutorials', link: 'tutorials/rollup-docker' },
-    ],
+    nav: nav(),
     
     footer: {
       message: 'Released under the APACHE-2.0 License.',
@@ -57,21 +55,9 @@ export default withMermaid({
       provider: 'local',
     },
 
-    sidebar: [
-      {
-        text: 'Introduction',
-        items: [
-          { text: 'Introduction to Rollkit', link: '/intro'}
-        ]
-      },
-      {
-        text: 'Tutorials',
-        items: [
-          { text: 'Starter Rollup with Docker', link: 'tutorials/rollup-docker'},
-          { text: 'Rollup Starter', link: 'tutorials/rollup-starter'}
-        ]
-      }
-    ],
+    sidebar: {
+      '/docs': sidebarHome(),
+    },
 
     editLink: {
       pattern: 'https://github.com/jcstein/rollkit-vitepress/edit/main/docs/:path',
@@ -89,5 +75,34 @@ export default withMermaid({
       { icon: 'twitter', link: 'https://twitter.com/RollkitDev' },
       { icon: { svg: telegramSVG }, link: 'https://t.me/rollkit' }
     ]
+
+  
   }
 })
+
+function nav() {
+  return [
+    { text: 'Home', link: '/docs' },
+    { text: 'Intro', link: '/docs/reference/intro'},
+    { text: 'Tutorials', link: '/docs/tutorials/rollup-docker' },
+  ]
+}
+
+function sidebarHome() {
+  return [      
+    {
+      text: 'Introduction',
+      items: [
+        { text: 'Introduction to Rollkit', link: '/docs/reference/intro'},
+      ]
+    },
+    {
+      text: 'Tutorials',
+      collapsed: false,
+      items: [
+        { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
+        { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'}
+      ]
+    }
+  ]
+}

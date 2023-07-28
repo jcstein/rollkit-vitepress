@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Rollup Starter
-      link: tutorials/rollup-docker
+      link: /docs/tutorials/rollup-docker
     - theme: alt
       text: Introduction
-      link: /intro
+      link: /reference/intro
 
 features:
   - title: 🔐 Shared security
