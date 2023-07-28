@@ -62,6 +62,7 @@ export default withMermaid({
         text: 'Examples',
         items: [
           { text: 'Introduction to Rollkit', link: '/intro'},
+          { text: 'Starter Rollup with Docker', link: '/rollup-docker'},
           { text: 'Rollup Starter', link: '/rollup-starter'},
           { text: 'Polaris EVM Starter', link: '/polaris'},
           { text: 'Markdown Examples', link: '/markdown-examples' },

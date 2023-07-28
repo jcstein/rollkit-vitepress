@@ -8,9 +8,6 @@ devDependencies:
   i:
     specifier: ^0.3.7
     version: 0.3.7
-  mermaid:
-    specifier: ^10.3.0
-    version: 10.3.0
   vitepress:
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6(@algolia/client-search@4.19.1)(search-insights@2.7.0)
