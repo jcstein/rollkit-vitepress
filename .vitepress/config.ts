@@ -82,7 +82,7 @@ export default withMermaid({
 
 function nav() {
   return [
-    { text: 'Home', link: '/docs' },
+    { text: 'Home', link: '/' },
     { text: 'Intro', link: '/docs/reference/intro'},
     { text: 'Tutorials', link: '/docs/tutorials/rollup-docker' },
   ]
@@ -92,8 +92,14 @@ function sidebarHome() {
   return [      
     {
       text: 'Introduction',
+      collapsed: false,
       items: [
         { text: 'Introduction to Rollkit', link: '/docs/reference/intro'},
+        { text: 'About Rollkit', link: '/docs/reference/about' },
+        { text: 'Rollkit stack', link: '/docs/reference/stack' },
+        { text: 'Transaction flow', link: '/docs/reference/transaction-flow' },
+        { text: 'Building with Rollkit', link: '/docs/reference/building-with-rollkit'},
+        { text: 'Building and deploying a rollup', link: '/docs/reference/building-and-deploying-a-rollup'},
       ]
     },
     {
@@ -101,7 +107,10 @@ function sidebarHome() {
       collapsed: false,
       items: [
         { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
-        { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'}
+        { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'},
+        { text: 'GM world rollup', link: '/docs/tutorials/gm-world'},
+        { text: 'GM world frontend', link: '/docs/tutorials/gm-world-frontend'},
+        { text: 'Recipe book rollup', link: '/docs/tutorials/recipe-book'},
       ]
     }
   ]
