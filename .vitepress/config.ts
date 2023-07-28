@@ -47,7 +47,7 @@ export default withMermaid({
     nav: nav(),
     
     footer: {
-      message: 'Released under the APACHE-2.0 License.',
+      message: 'Released under the APACHE-2.0 License',
       copyright: 'Copyright © 2023 Rollkit'
     },
 

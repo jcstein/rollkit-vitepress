@@ -45,8 +45,6 @@ export AUTH_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJwdWJsaWMiL
 bash init-local.sh
 ```
 
-## Congratulations
-
 The rollup logs will begin to look similar to this:
 
 ```bash
@@ -55,3 +53,7 @@ The rollup logs will begin to look similar to this:
 3:35PM INF commit synced commit=436F6D6D697449447B5B3230302031373020313933203836203730203334203139302031353220383220313432203133342034382032333520343920363220313720323131203133312032343720313133203634203933203134372032332031353920323435203931203133342031342031333520323138203138355D3A317D
 3:35PM INF indexed block height=1 module=txindex
 ```
+
+## Next steps
+
+In the next tutorial, you'll learn how to build the GM world rollup using Ignite CLI.
