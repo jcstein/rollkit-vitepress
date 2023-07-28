@@ -10,9 +10,9 @@ You can get started with the following tutorials:
 
 ## 1. Beginner {#beginner}
 
-- [GM world](/docs/tutorials/gm-world)
-- [GM world frontend](/docs/tutorials/gm-world-frontend)
-- [Recipe book](/docs/tutorials/recipe-book)
+- [GM World](/docs/tutorials/gm-world)
+- [GM World frontend](/docs/tutorials/gm-world-frontend)
+- [Recipe Book](/docs/tutorials/recipe-book)
 - [Restart your rollup](/docs/tutorials/restart-rollup)
 
 ## 2️. Intermediate {#intermediate}

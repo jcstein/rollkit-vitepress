@@ -15,7 +15,7 @@ sections:
 
 ## 💻 Setup of this example {#setup}
 
-In this example, we're using Celestia's [Blockspacerace testnet](https://docs.celestia.org/nodes/blockspace-race/) and running an [Ethermint](./ethermint.md) chain. In this example, our Celestia DA light node ran out of Blockspace Race TIA and we are unable to post new blocks to Celestia due to a [`Code: 19`](https://github.com/cosmos/cosmos-sdk/blob/main/types/errors/errors.go#L95) error. This error is defined by Cosmos SDK as:
+In this example, we're using Celestia's [Blockspacerace testnet](https://docs.celestia.org/nodes/blockspace-race/) and running an Ethermint chain. In this example, our Celestia DA light node ran out of Blockspace Race TIA and we are unable to post new blocks to Celestia due to a [`Code: 19`](https://github.com/cosmos/cosmos-sdk/blob/main/types/errors/errors.go#L95) error. This error is defined by Cosmos SDK as:
 
 ```go
 // ErrTxInMempoolCache defines an ABCI typed error where a tx already exists in the mempool.

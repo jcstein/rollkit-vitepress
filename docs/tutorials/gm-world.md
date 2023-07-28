@@ -1,4 +1,4 @@
-# GM world rollup
+# GM World rollup
 
 ## ☀️ Introduction {#introduction}
 
@@ -18,8 +18,8 @@ to allow blockchains to communicate with one another.
 
 The development journey for your rollup will look something like this:
 
-1. [Part one](#part-one): Run your rollup and post DA to a local devnet, and make sure everything works as expected
-2. [Part two](#part-two): Deploy the rollup, posting to a DA testnet. Confirm again that everything is functioning properly
+1. [Part One](#part-one): Run your rollup and post DA to a local devnet, and make sure everything works as expected
+2. [Part Two](#part-two): Deploy the rollup, posting to a DA testnet. Confirm again that everything is functioning properly
 3. Coming soon: Deploy your rollup to the DA layer's mainnet
 
 ::: tip
@@ -63,8 +63,8 @@ to say GM, Gm, or gm. You can think of "GM" as the new version of
 
 
 ::: tip
-If you are only planning to complete [Part one](#part-one),
-feel free to skip to the [Part two](#part-two).
+If you are only planning to complete [Part One](#part-one),
+feel free to skip to the [Part Two](#part-two).
 
 Be sure to use the same testnet installation instructions through this
 entire tutorial.
@@ -160,8 +160,8 @@ Is on Gitpod: false
 ## macOS setup
 
 ::: tip
-If you are only planning to complete [Part one](#part-one),
-feel free to skip to the [Part two](#part-two).
+If you are only planning to complete [Part One](#part-one),
+feel free to skip to the [Part Two](#part-two).
 
 Be sure to use the same testnet installation instructions through this
 entire tutorial.
@@ -280,18 +280,18 @@ command-line JSON processor.
 brew install wget && brew install jq
 ```
 
-## Part one
+## Part One
 
 This part of the tutorial will teach developers how to easily run a local data availability (DA) devnet on their own machine (or in the cloud).
 **Running a local devnet for DA to test your rollup is the recommended first step before deploying to a testnet.**
 This eliminates the need for testnet tokens and deploying to a testnet until you are ready.
 
 ::: warning
-Part one of the tutorial has only been tested on an AMD machine running Ubuntu 22.10 x64.
+Part One of the tutorial has only been tested on an AMD machine running Ubuntu 22.10 x64.
 :::
 
 Whether you're a developer simply testing things on your laptop or using a virtual machine in the cloud,
-this process can be done on any machine of your choosing. We tested out the Devnet section (Part one) on a machine with the following specs:
+this process can be done on any machine of your choosing. We tested out the Devnet section (Part One) on a machine with the following specs:
 
 * Memory: 1 GB RAM
 * CPU: Single Core AMD
@@ -644,7 +644,7 @@ pagination:
   total: "0"
 ```
 
-## Part two
+## Part Two
 
 ### 🛑 Stopping our local devnet rollup {#stop-your-local-devnet}
 

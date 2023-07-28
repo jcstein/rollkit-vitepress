@@ -56,4 +56,4 @@ The rollup logs will begin to look similar to this:
 
 ## Next steps
 
-In the next tutorial, you'll learn how to build the GM world rollup using Ignite CLI.
+In the next tutorial, you'll learn how to build the GM World rollup using Ignite CLI.

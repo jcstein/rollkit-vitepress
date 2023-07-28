@@ -41,8 +41,7 @@ There are currently 2 ways to build on Celestia:
 ### Local Development Environment
 
 The Rollkit v0.9.0 release is compatible with the
-[local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet)
-[oolong](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8)
+[local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) [oolong](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8)
 release. This version combination is compatible with celestia-app
 [v1.0.0-rc7](https://github.com/celestiaorg/celestia-app/releases/tag/v1.0.0-rc7)
 and celestia-node
@@ -97,11 +96,11 @@ whether it's in the form of code,
 documentation, bug reports, feature requests, or anything else.
 
 If you're looking for issues to work on, try looking at the
-[good first issue list](https://github.com/rollkit/rollkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+[Good First Issues](https://github.com/rollkit/rollkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) on GitHub.
 Issues with this tag are suitable for a new external contributor
 and is a great way to find something you can help with!
 
-See [the contributing guide](https://github.com/rollkit/rollkit/tree/main/CONTRIBUTING.md) for more details.
+See the [Contributing Guide](https://github.com/rollkit/rollkit/tree/main/CONTRIBUTING.md) for more details.
 
 Please join our [Community Telegram](https://t.me/rollkit)
 to ask questions, discuss your ideas, and connect with other contributors.
