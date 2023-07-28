@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "Rollkit"
-  text: "The open modular framework for sovereign rollups."
-  tagline: My great project tagline
+  text: "The open modular framework for sovereign rollups"
+  tagline: Secure your sovereignty.
   image:
     src: /logo-big.svg
     alt: Rollkit
   actions:
     - theme: brand
       text: Rollup Starter
-      link: /rollup-docker
+      link: tutorials/rollup-docker
     - theme: alt
       text: Introduction
       link: /intro

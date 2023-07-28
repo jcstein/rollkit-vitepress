@@ -44,7 +44,8 @@ export default withMermaid({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/rollup-starter' },
+      { text: 'Intro', link: 'intro'},
+      { text: 'Tutorials', link: 'tutorials/rollup-docker' },
     ],
     
     footer: {
@@ -58,13 +59,16 @@ export default withMermaid({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Introduction',
         items: [
-          { text: 'Introduction to Rollkit', link: '/intro'},
-          { text: 'Starter Rollup with Docker', link: '/rollup-docker'},
-          { text: 'Rollup Starter', link: '/rollup-starter'},
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Introduction to Rollkit', link: '/intro'}
+        ]
+      },
+      {
+        text: 'Tutorials',
+        items: [
+          { text: 'Starter Rollup with Docker', link: 'tutorials/rollup-docker'},
+          { text: 'Rollup Starter', link: 'tutorials/rollup-starter'}
         ]
       }
     ],
