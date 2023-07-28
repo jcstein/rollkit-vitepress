@@ -1,4 +1,4 @@
-# The Rollkit stack
+# Rollkit stack
 
 This page will cover the main components of Rollkit.
 

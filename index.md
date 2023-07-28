@@ -15,7 +15,7 @@ hero:
       link: /docs/tutorials/rollup-starter
     - theme: alt
       text: Introduction
-      link: /about/intro
+      link: /docs/about/intro
 
 features:
   - title: 🔐 Shared security
