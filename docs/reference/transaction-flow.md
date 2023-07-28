@@ -11,7 +11,41 @@ Light nodes are still a work in progress.
 
 Here's what the typical transaction flow looks like:
 
-![tx-flow](/transaction-flow.png)
+## Transaction submission and validation
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant LightNode
+    participant FullNode
+    participant Sequencer
+
+    User->>LightNode: Submit Transaction
+    LightNode->>FullNode: Gossip Transaction
+    FullNode-->>User: Refuse (if invalid)
+    FullNode->>FullNode: Check Validity
+    FullNode->>FullNode: Add to Mempool (if valid)
+    FullNode-->>User: Transaction Processed (if valid)
+    FullNode->>Sequencer: Inform about Valid Transaction
+    Sequencer->>DALayer: Add to Rollup Block
+
+```
+
+## Block processing and fraud proofs
+
+```mermaid
+sequenceDiagram
+    participant DALayer
+    participant FullNode
+    participant RollupChain
+
+    DALayer->>RollupChain: Update State
+    DALayer->>FullNode: Download & Validate Block
+    FullNode->>FullNode: Generate Fraud Proofs (if invalid)
+    FullNode->>LightNode: Gossip Fraud Proofs (if invalid)
+    RollupChain->>RollupChain: Halt & Decide to Fork (if invalid)
+    RollupChain->>DALayer: Submit New Block (after fork)
+```
 
 To transact, users submit a transaction to their light node, which gossips the transaction to a full node. Before adding the transaction to their mempool, the full node checks its validity. Valid transactions are included in the mempool, while invalid ones are refused, and the user's transaction will not be processed.
 

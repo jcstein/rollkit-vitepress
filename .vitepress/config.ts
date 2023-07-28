@@ -34,7 +34,7 @@ export default withMermaid({
       'script',
       {
         src: 'https://plausible.io/js/script.js',
-        'data-domain': 'rollkit.xyz',
+        'data-domain': 'rollkit-vitepress.vercel.app',
         defer: ''
       }
     ]
@@ -83,8 +83,8 @@ export default withMermaid({
 function nav() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Intro', link: '/docs/reference/intro'},
-    { text: 'Tutorials', link: '/docs/tutorials/rollup-docker' },
+    { text: 'Intro', link: '/docs/about/intro'},
+    { text: 'Tutorials', link: '/docs/tutorials/rollup-starter' },
   ]
 }
 
@@ -94,12 +94,26 @@ function sidebarHome() {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'Introduction to Rollkit', link: '/docs/reference/intro'},
-        { text: 'About Rollkit', link: '/docs/reference/about' },
+        { text: 'Introduction to Rollkit', link: '/docs/about/intro'},
+        { text: 'About Rollkit', link: '/docs/about/about' },
+      ]
+    },
+    {
+      text: 'Reference',
+      collapsed: false,
+      items: [
         { text: 'Rollkit stack', link: '/docs/reference/stack' },
         { text: 'Transaction flow', link: '/docs/reference/transaction-flow' },
         { text: 'Building with Rollkit', link: '/docs/reference/building-with-rollkit'},
         { text: 'Building and deploying a rollup', link: '/docs/reference/building-and-deploying-a-rollup'},
+        {
+          text: 'Rollup Wiki',
+          collapsed: false,
+          items: [
+            { text: 'A-Z', link: '/docs/reference/rollup-wiki' },
+            // { text: 'Basic Rollup', link: '/docs/reference/basic-rollup' },
+          ]
+        },
       ]
     },
     {
@@ -110,7 +124,7 @@ function sidebarHome() {
           text: 'Beginner',
           collapsed: true,
           items: [
-            { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
+            // { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
             { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'},
             { text: 'GM world rollup', link: '/docs/tutorials/gm-world'},
             { text: 'GM world frontend', link: '/docs/tutorials/gm-world-frontend'},
@@ -123,6 +137,17 @@ function sidebarHome() {
           collapsed: true,
           items: [
             { text: 'Wordle app', link: '/docs/tutorials/wordle'},
+            { text: 'CosmWasm rollup', link: '/docs/tutorials/cosmwasm'},
+
+          ]
+        },
+        {
+          text: 'Advanced',
+          collapsed: true,
+          items: [
+            { text: 'Full-stack modular dapp with Celestia', link: 'https://docs.celestia.org/developers/full-stack-modular-development-guide'},
+            { text: 'Hyperlane + Celestia tutorial', link: 'https://docs.hyperlane.xyz/docs/deploy/celestia-+-hyperlane'},
+
           ]
         }
       ]

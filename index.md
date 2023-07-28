@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Rollup Starter
-      link: /docs/tutorials/rollup-docker
+      link: /docs/tutorials/rollup-starter
     - theme: alt
       text: Introduction
       link: /reference/intro
