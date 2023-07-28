@@ -1,4 +1,4 @@
-# Polaris EVM and Rollkit
+# Starter Rollup with Docker
 
 gm
 
