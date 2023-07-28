@@ -1,4 +1,3 @@
-// import { defineConfig } from 'vitepress'
 import { withMermaid } from "vitepress-plugin-mermaid";
 
 const telegramSVG = ` <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,10 +82,9 @@ export default withMermaid({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jcstein/docs' },
+      { icon: 'github', link: 'https://github.com/jcstein/rollkit-vitepress' },
       { icon: 'twitter', link: 'https://twitter.com/RollkitDev' },
       { icon: { svg: telegramSVG }, link: 'https://t.me/rollkit' }
     ]
-  },
-  mermaid: { }
+  }
 })

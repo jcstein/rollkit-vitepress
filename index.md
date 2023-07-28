@@ -7,7 +7,7 @@ hero:
   text: "The open modular framework for sovereign rollups."
   tagline: My great project tagline
   image:
-    src: https://uploads-ssl.webflow.com/640f864b2475ae4fe0020732/642af551dc4ef13f6a7faddb_Home%20-%201.png
+    src: /logo-big.svg
     alt: Rollkit
   actions:
     - theme: brand
