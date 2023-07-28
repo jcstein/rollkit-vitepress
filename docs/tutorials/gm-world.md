@@ -22,21 +22,28 @@ The development journey for your rollup will look something like this:
 2. [Part two](#part-two): Deploy the rollup, posting to a DA testnet. Confirm again that everything is functioning properly
 3. Coming soon: Deploy your rollup to the DA layer's mainnet
 
-:::tip
+::: tip
 This tutorial will explore developing with Rollkit,
 which is still in Alpha stage. If you run into bugs, please write a Github
 [Issue ticket](https://github.com/rollkit/docs/issues/new)
 or let us know in our [Telegram](https://t.me/rollkit).
 :::
 
-:::warning
+::: warning
 The script for this tutorial is built for Celestia's
 [Arabica devnet](https://docs.celestia.org/nodes/arabica-devnet).
 :::
 
-## Table of Contents {#toc}
+## 📋 Table of contents for this tutorial {#toc}
+
+The following tutorial is broken down into the following
+sections:
+
+::: details Table of contents
 
 [[toc]]
+
+:::
 
 ## 🤔 What is GM? {#what-is-gm}
 
@@ -55,7 +62,7 @@ to say GM, Gm, or gm. You can think of "GM" as the new version of
 * [A Celestia Light Node](https://docs.celestia.org/nodes/light-node)
 
 
-:::tip
+::: tip
 If you are only planning to complete [Part one](#part-one),
 feel free to skip to the [Part two](#part-two).
 
@@ -89,7 +96,7 @@ Run this command in your terminal to install Ignite CLI:
 curl https://get.ignite.com/cli@v0.26.1! | bash
 ```
 
-:::tip
+::: tip
 ✋ On some machines, you may run into permissions errors like the one below.
 You can resolve this error by following the guidance
 [here](https://docs.ignite.com/v0.25.2/guide/install#write-permission) or below.
@@ -152,7 +159,7 @@ Is on Gitpod: false
 
 ## macOS setup
 
-:::tip
+::: tip
 If you are only planning to complete [Part one](#part-one),
 feel free to skip to the [Part two](#part-two).
 
@@ -184,7 +191,7 @@ Run this command in your terminal to install Ignite CLI:
 curl https://get.ignite.com/cli@v0.26.1! | bash
 ```
 
-:::tip
+::: tip
 ✋ On some machines, you may run into permissions errors like the one below.
 You can resolve this error by following the guidance
 [here](https://docs.ignite.com/v0.25.2/guide/install#write-permission) or below.
@@ -279,7 +286,7 @@ This part of the tutorial will teach developers how to easily run a local data a
 **Running a local devnet for DA to test your rollup is the recommended first step before deploying to a testnet.**
 This eliminates the need for testnet tokens and deploying to a testnet until you are ready.
 
-:::warning
+::: warning
 Part one of the tutorial has only been tested on an AMD machine running Ubuntu 22.10 x64.
 :::
 
@@ -347,7 +354,7 @@ If you want to be able to transpose your JSON results in a nicer format, you can
 sudo apt install jq
 ```
 
-:::tip
+::: tip
 We'll need `jq` later, so install it!
 :::
 
@@ -413,7 +420,7 @@ have not already:
 curl https://get.ignite.com/cli@v0.26.1! | bash
 ```
 
-:::tip
+::: tip
 If you have issues with installation, the full guide can be found [here](https://get.ignite.com/cli) or on [docs.ignite.com](https://docs.ignite.com).
 The above command was tested on `amd64/linux`.
 :::
@@ -432,7 +439,7 @@ cd $HOME
 ignite scaffold chain gm --address-prefix gm
 ```
 
-:::tip
+::: tip
 The `--address-prefix gm` flag will change the address prefix from `cosmos` to `gm`. Read more on the [Cosmos docs](https://docs.cosmos.network/v0.46/basics/accounts.html).
 :::
 
@@ -476,12 +483,23 @@ Most of our work in this tutorial will happen in the `x` directory.
 To swap out Tendermint for Rollkit, run the following command
 from inside the `gm` directory:
 
-```bash
+::: code-group
+
+```bash [local-celestia-devnet]
 go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/rollkit/cosmos-sdk@v0.46.13-rollkit-v0.9.0-no-fraud-proofs
 go mod edit -replace github.com/tendermint/tendermint=github.com/rollkit/cometbft@v0.0.0-20230524013049-75272ebaee38
 go mod tidy
 go mod download
 ```
+
+```bash [Arabica Devnet]
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/rollkit/cosmos-sdk@v0.46.13-rollkit-v0.9.0-no-fraud-proofs
+go mod edit -replace github.com/tendermint/tendermint=github.com/rollkit/cometbft@v0.0.0-20230524013049-75272ebaee38
+go mod tidy
+go mod download
+```
+
+:::
 
 ### ▶️ Start your rollup {#start-your-rollup}
 

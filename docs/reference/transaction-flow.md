@@ -9,10 +9,6 @@ Rollup users use a light node to communicate with the rollup P2P network for two
 Light nodes are still a work in progress.
 :::
 
-::: details
-Light nodes are still a work in progress.
-:::
-
 Here's what the typical transaction flow looks like:
 
 ![tx-flow](/transaction-flow.png)

@@ -106,11 +106,25 @@ function sidebarHome() {
       text: 'Tutorials',
       collapsed: false,
       items: [
-        { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
-        { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'},
-        { text: 'GM world rollup', link: '/docs/tutorials/gm-world'},
-        { text: 'GM world frontend', link: '/docs/tutorials/gm-world-frontend'},
-        { text: 'Recipe book rollup', link: '/docs/tutorials/recipe-book'},
+        {
+          text: 'Beginner',
+          collapsed: true,
+          items: [
+            { text: 'Starter Rollup with Docker', link: '/docs/tutorials/rollup-docker'},
+            { text: 'Rollup Starter', link: '/docs/tutorials/rollup-starter'},
+            { text: 'GM world rollup', link: '/docs/tutorials/gm-world'},
+            { text: 'GM world frontend', link: '/docs/tutorials/gm-world-frontend'},
+            { text: 'Recipe book rollup', link: '/docs/tutorials/recipe-book'},
+            { text: 'How to restart your rollup', link: '/docs/tutorials/restart-rollup'},
+          ]
+        },
+        {
+          text: 'Intermediate',
+          collapsed: true,
+          items: [
+            { text: 'Wordle app', link: '/docs/tutorials/wordle'},
+          ]
+        }
       ]
     }
   ]

@@ -50,7 +50,7 @@ and celestia-node
 
 ### Arabica devnet and Mocha testnet
 
-:::warning
+::: warning
 **Rollkit v0.9.0 is not compatible with latest release of Mocha.**
 :::
 
@@ -103,7 +103,7 @@ and is a great way to find something you can help with!
 
 See [the contributing guide](https://github.com/rollkit/rollkit/tree/main/CONTRIBUTING.md) for more details.
 
-Please join our [Community Discord](https://discord.com/invite/YsnTPcSfWQ)
+Please join our [Community Telegram](https://t.me/rollkit)
 to ask questions, discuss your ideas, and connect with other contributors.
 
 ## Dependency Graph

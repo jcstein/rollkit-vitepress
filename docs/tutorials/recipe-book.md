@@ -16,16 +16,27 @@ modifying the state with transactions (Cosmos SDK messages)
 that are routed to a module and its message handlers, which
 are sent to the `recipes` blockchain.
 
-:::tip note
+::: tip
 This tutorial will explore developing with Rollkit,
 which is still in Alpha stage. If you run into bugs, please write a Github
 [Issue ticket](https://github.com/rollkit/docs/issues/new)
 or let us know in our [Telegram](https://t.me/rollkit).
 :::
 
-:::danger caution
+::: warning
 The script for this tutorial is built for Celestia's
 [Arabica devnet](https://docs.celestia.org/nodes/arabica-devnet).
+:::
+
+## 📋 Table of contents for this tutorial {#toc}
+
+The following tutorial is broken down into the following
+sections:
+
+::: details Table of contents
+
+[[toc]]
+
 :::
 
 ## 💻 Prerequisites {#prerequisites}
@@ -56,12 +67,23 @@ cd recipes
 
 To swap out Tendermint for Rollkit, run the following commands:
 
-```bash
+::: code-group
+
+```bash [local-celestia-devnet]
 go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/rollkit/cosmos-sdk@v0.46.13-rollkit-v0.9.0-no-fraud-proofs
 go mod edit -replace github.com/tendermint/tendermint=github.com/rollkit/cometbft@v0.0.0-20230524013049-75272ebaee38
 go mod tidy
 go mod download
 ```
+
+```bash [Arabica Devnet]
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/rollkit/cosmos-sdk@v0.46.13-rollkit-v0.9.0-no-fraud-proofs
+go mod edit -replace github.com/tendermint/tendermint=github.com/rollkit/cometbft@v0.0.0-20230524013049-75272ebaee38
+go mod tidy
+go mod download
+```
+
+:::
 
 ## 💬 Message types {#message-types}
 
@@ -93,7 +115,7 @@ Head to your `recipes/proto/recipes/recipes/tx.proto` file
 and you will see the `MsgCreateRecipe` has been created.
 Add `uint64 id = 1;` to the `MsgCreateRecipeResponse` function:
 
-```protobuf title="recipes/proto/recipes/recipes/tx.proto"
+```proto title="recipes/proto/recipes/recipes/tx.proto"
 message MsgCreateRecipeResponse {
   uint64 id = 1; // [!code focus]
 }
@@ -104,7 +126,7 @@ message MsgCreateRecipeResponse {
 Looking further into the message, we can see that
 `MsgCreateRecipe` has 3 fields: creator, dish, and ingredients.
 
-```protobuf title="recipes/proto/recipes/recipes/tx.proto"
+```proto title="recipes/proto/recipes/recipes/tx.proto"
 message MsgCreateRecipe {
   string creator = 1;
   string dish = 2;
@@ -114,7 +136,7 @@ message MsgCreateRecipe {
 
 We can also see that the `CreateRecipe` RPC has already been added to the `Msg` service:
 
-```protobuf title="recipes/proto/recipes/recipes/tx.proto"
+```proto title="recipes/proto/recipes/recipes/tx.proto"
 service Msg {
   rpc CreateRecipe(MsgCreateRecipe) returns (MsgCreateRecipeResponse);
 }
@@ -320,13 +342,13 @@ create x/recipes/keeper/query_dishes.go
 
 In the `proto/recipes/recipes/query.proto` file import:
 
-```protobuf title="proto/recipes/recipes/query.proto"
+```proto title="proto/recipes/recipes/query.proto"
 import "recipes/recipes/recipe.proto";
 ```
 
 Add pagination to the recipe *request*:
 
-```protobuf title="proto/recipes/recipes/query.proto"
+```proto title="proto/recipes/recipes/query.proto"
 message QueryDishesRequest {
   // Adding pagination to request
   cosmos.base.query.v1beta1.PageRequest pagination = 1;
@@ -335,7 +357,7 @@ message QueryDishesRequest {
 
 Add pagination to the recipe *response*:
 
-```protobuf title="proto/recipes/recipes/query.proto"
+```proto title="proto/recipes/recipes/query.proto"
 message QueryDishesResponse {
   // Returning a list of recipes
   repeated Recipe Recipe = 1;

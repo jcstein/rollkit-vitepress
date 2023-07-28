@@ -1,9 +1,5 @@
 # Introduction to Rollkit
 
-::: warning YO
-This is a draft.
-:::
-
 Welcome to the Rollkit docs. We're happy you made it here!
 
 Rollkit is the open modular framework for sovereign rollups.
