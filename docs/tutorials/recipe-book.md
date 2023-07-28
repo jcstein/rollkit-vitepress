@@ -95,7 +95,7 @@ Add `uint64 id = 1;` to the `MsgCreateRecipeResponse` function:
 
 ```protobuf title="recipes/proto/recipes/recipes/tx.proto"
 message MsgCreateRecipeResponse {
-  uint64 id = 1;
+  uint64 id = 1; // [!code focus]
 }
 ```
 
