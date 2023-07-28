@@ -1,8 +1,0 @@
-# Polaris EVM and Rollkit
-
-gm
-
-```mermaid
-flowchart LR
-  Start --> Stop
-```
