@@ -1,53 +1,53 @@
 {
-  "hash": "11377534",
-  "browserHash": "e6476452",
+  "hash": "5e6a7528",
+  "browserHash": "d6ae105d",
   "optimized": {
     "vue": {
-      "src": "../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0c4568ad",
+      "fileHash": "d9374cff",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "7629f40b",
+      "fileHash": "376e490f",
       "needsInterop": false
     },
     "@braintree/sanitize-url": {
-      "src": "../../../node_modules/.pnpm/@braintree+sanitize-url@6.0.2/node_modules/@braintree/sanitize-url/dist/index.js",
+      "src": "../../../node_modules/@braintree/sanitize-url/dist/index.js",
       "file": "@braintree_sanitize-url.js",
-      "fileHash": "ba759528",
+      "fileHash": "408255bd",
       "needsInterop": true
     },
     "dayjs": {
-      "src": "../../../node_modules/.pnpm/dayjs@1.11.9/node_modules/dayjs/dayjs.min.js",
+      "src": "../../../node_modules/dayjs/dayjs.min.js",
       "file": "dayjs.js",
-      "fileHash": "ef9376c3",
+      "fileHash": "a35c10fd",
       "needsInterop": true
     },
     "debug": {
-      "src": "../../../node_modules/.pnpm/debug@4.3.4/node_modules/debug/src/browser.js",
+      "src": "../../../node_modules/debug/src/browser.js",
       "file": "debug.js",
-      "fileHash": "153c91fc",
+      "fileHash": "437c943c",
       "needsInterop": true
     },
     "cytoscape-cose-bilkent": {
-      "src": "../../../node_modules/.pnpm/cytoscape-cose-bilkent@4.1.0_cytoscape@3.25.0/node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
+      "src": "../../../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
       "file": "cytoscape-cose-bilkent.js",
-      "fileHash": "535e1f9f",
+      "fileHash": "e0da2286",
       "needsInterop": true
     },
     "cytoscape": {
-      "src": "../../../node_modules/.pnpm/cytoscape@3.25.0/node_modules/cytoscape/dist/cytoscape.cjs.js",
+      "src": "../../../node_modules/cytoscape/dist/cytoscape.cjs.js",
       "file": "cytoscape.js",
-      "fileHash": "6fd3ffc3",
+      "fileHash": "76e782a8",
       "needsInterop": true
     },
     "vitepress > minisearch": {
-      "src": "../../../node_modules/.pnpm/minisearch@6.1.0/node_modules/minisearch/dist/es/index.js",
+      "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "3339bbff",
+      "fileHash": "4bd3514f",
       "needsInterop": false
     }
   },

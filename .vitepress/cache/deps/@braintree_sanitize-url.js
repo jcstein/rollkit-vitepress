@@ -2,9 +2,9 @@ import {
   __commonJS
 } from "./chunk-76J2PTFD.js";
 
-// node_modules/.pnpm/@braintree+sanitize-url@6.0.2/node_modules/@braintree/sanitize-url/dist/index.js
+// node_modules/@braintree/sanitize-url/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/.pnpm/@braintree+sanitize-url@6.0.2/node_modules/@braintree/sanitize-url/dist/index.js"(exports) {
+  "node_modules/@braintree/sanitize-url/dist/index.js"(exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.sanitizeUrl = void 0;
     var invalidProtocolRegex = /^([^\w]*)(javascript|data|vbscript)/im;
