@@ -32,12 +32,22 @@ export default withMermaid({
     ['meta', { name: 'apple-mobile-web-app-title', content: 'Rollkit' }],
     [
       'script',
+      {},
+      `
+      window.chatbaseConfig = {
+        chatbotId: "sw0sRxREFEQLTdqwC_Fbe",
+      }
+      `
+    ],
+    ['script', { src: 'https://www.chatbase.co/embed.min.js', id: 'sw0sRxREFEQLTdqwC_Fbe', defer: true }],
+    [
+      'script',
       {
         src: 'https://plausible.io/js/script.js',
         'data-domain': 'rollkit-vitepress.vercel.app',
         defer: ''
       }
-    ]
+    ],
   ],
 
   appearance: 'dark',
