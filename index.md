@@ -11,8 +11,8 @@ hero:
     alt: Rollkit
   actions:
     - theme: brand
-      text: Rollup Starter
-      link: /tutorials/rollup-starter
+      text: Starter Rollup
+      link: /tutorials/starter-rollup
     - theme: alt
       text: Introduction
       link: /reference/intro
@@ -32,6 +32,6 @@ features:
     icon: ⚙️
   - title: Easy to deploy
     details: Deploy a rollup with only a few command lines
-    link: /tutorials/rollup-starter
+    link: /tutorials/starter-rollup
     icon: 🛸
 ---
